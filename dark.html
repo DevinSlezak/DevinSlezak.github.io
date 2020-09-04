@@ -27,13 +27,17 @@
             border:5px Solid Black;
             text-align:right;
         }
-        tr td{
-            color:#03DAC6;
-            background-color:Black;
-        }
         tr th {
             color:#BB86FC;
             background-color:Black;
+        }
+        .evenrow {
+            background-color:Gray;
+            color:Black;
+        }
+        .oddrow {
+            color:#03DAC6;
+            background-color:#636363;
         }
         </style>
         <b><h1>My First Heading</h1></b>
@@ -80,27 +84,27 @@
                     <th>Grapes</th>
                     <th>Orange</th>
                 </tr>
-                <tr>
+                <tr class="oddrow">
                     <td>Year 2013</td>
                     <td>300</td>
                     <td>200</td>                    <td>150</td>
                     <td>130</td>
                 </tr>
-                <tr>
+                <tr class="evenrow">
                     <td>Year 2012</td>
                     <td>150</td>
                     <td>130</td>
                     <td>120</td>
                     <td>220</td>
                 </tr>
-                <tr>
+                <tr class="oddrow">
                     <td>Year 2011</td>
                     <td>100</td>
                     <td>120</td>
                     <td>160</td>
                     <td>200</td>
                 </tr>
-                <tr>
+                <tr class="evenrow">
                     <td>Year 2020</td>
                     <td>200</td>
                     <td>300</td>
