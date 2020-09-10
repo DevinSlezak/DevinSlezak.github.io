@@ -1,8 +1,9 @@
-<style>
+
             .navbar{
-                background-color:black;
+                background-color:#05386B;
                 overflow:hidden;
                 padding:0px;
+                
             }
             .navbar li{
                 list-style-type:none;
@@ -17,7 +18,8 @@
                 display:inline-block;
             }
             .navbar li:hover {
-                background-color:red;
+                background-color:black;
+                background-image: linear-gradient(to bottom,#05386B, #5CDB95);
             }
         
          .dropdown-content li{
@@ -32,4 +34,12 @@
         .dropdown:hover .dropdown-content{
             display:block;
         }
-        </style>
+        .navbar .active {
+            background-color:black;
+            background-image: linear-gradient(to bottom,#05386B, #5CDB95);
+        }
+        .background {
+            background-color:#379683;
+            background: linear-gradient()
+        }
+     
