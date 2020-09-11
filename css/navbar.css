@@ -42,4 +42,10 @@
             background-color:#379683;
             background: linear-gradient()
         }
+       .table tr td {
+           border:5px solid black  
+       }
+       .table tr th {
+           border:5px solid black  
+       }
      
