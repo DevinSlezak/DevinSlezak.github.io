@@ -43,9 +43,9 @@
             background: linear-gradient()
         }
        .table tr td {
-           border:5px solid black width="500px" height="500px"
+           border:5px solid black
        }
        .table tr th {
-           border:5px solid black width="500px" height="500px"
+           border:5px solid black
        }
      
