@@ -1,36 +1,17 @@
-<style>
-        h1 {
-            color:white;
+        .background {
+            background-color:#379683;
+            background: linear-gradient()
         }
-        h2 {
-            color:#BB86FC;
-        }
-        ol {
-         color:White;
-        }
-        ol ul li {
-         color:#03DAC6;
-        }
-        ul ul li {
-         color:#03DAC6;
-        }
-        ul li {
-         color:White;
-        }
-        table {
-            border:5px Solid Black;
-            text-align:right;
-        }
-        tr th {
-            color:#BB86FC;
-            background-color:Black;
-        }
-        .evenrow {
-            background-color:Gray;
-            color:Black;
-        }
-        .oddrow {
-            color:#03DAC6;
-            background-color:#636363;
-        }
-        </style>
+       .table tr td {
+           border:5px solid black
+       }
+       .table tr th {
+           border:5px solid black
+       }
+       .info {
+           font-size:12px;
+       }
+       .line {
+           color:black;
+       }
+        

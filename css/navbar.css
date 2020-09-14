@@ -38,14 +38,5 @@
             background-color:black;
             background-image: linear-gradient(to bottom,#05386B, #5CDB95);
         }
-        .background {
-            background-color:#379683;
-            background: linear-gradient()
-        }
-       .table tr td {
-           border:5px solid black
-       }
-       .table tr th {
-           border:5px solid black
-       }
+       
      
