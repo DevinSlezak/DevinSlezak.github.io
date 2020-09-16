@@ -1,23 +1,38 @@
         .background {
-            background-color:#379683;
+            background-color:#0B0C10;
             background: linear-gradient()
         }
        .table tr td {
-           border:5px solid black
+            border-color:#66FCF1;
+            border-style:solid;
        }
        .table tr th {
-           border:5px solid black
+            border-color:#66FCF1;
        }
        .info {
            font-size:15px;
+           color:#C5C6C7;
        }
        .line {
-           color:black;
+           color:#66FCF1;
        }
        .parahead {
            font-size:18px;
+           color:#C5C6C7;
        }
-       .mid {
+      .mid {
            text-align:center;
+           color:#C5C6C7;
+       }
+      .hed {
+           color:#66FCF1;
+           text-align:center;
+       }
+       .home {
+           color:#C5C6C7;
+       }
+       .table {
+            border-color:#66FCF1;
+            border-style:solid;
        }
         
