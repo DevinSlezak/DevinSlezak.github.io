@@ -1,6 +1,6 @@
         .background {
             background-color:#0B0C10;
-            background: linear-gradient()
+            background-image:url("https://img.freepik.com/free-vector/black-carbon-industrial-background_79145-253.jpg?size=626&ext=jpg");
         }
        .table tr td {
             border-color:#66FCF1;
@@ -32,7 +32,7 @@
            color:#C5C6C7;
        }
        .table {
-            border-color:#66FCF1;
+            border-color:rgb(95, 117, 124);
             border-style:solid;
        }
         
