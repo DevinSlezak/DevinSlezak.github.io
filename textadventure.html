@@ -18,6 +18,9 @@
             height:100%;
             width:56%;
             float:left;
+            display:flex;
+            align-items:center;
+            justify-content:center;
         }
         #right_pane{
             background-color:blue;
@@ -28,6 +31,30 @@
         #story_text{
             background-color:yellow;
             height:80%;
+        }
+        #button_choices{
+            background-color:pink;
+            height: 20%;
+            color:red;
+            font:bold;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+        }
+        #story_ing{
+            max-height:97%;
+            max-width:100%;
+            width:auto;
+            height:auto;
+        }
+        .buttons{
+            text-decoration:none;
+            color:white;
+            background-color:black;
+            padding: 10px;
+            border-radius:8px;
+            font-size:25px;
+            margin:10px;
         }
     </style>
     <body class="background">
@@ -50,10 +77,21 @@
         </ul>
         
     <div id="container">
-        <div id="left_pane"></div>
-        <div id="right_pane"></div>
-            <div id="story_text"></div>
-            <div id="button-choices"></div>
+        <div id="left_pane">
+            <img id="story_ing"src="images/cocacola_.jpg"/>
+        </div>
+        <div id="right_pane">
+            <div id="story_text">
+                <p>Welcome to the Ice Cream Shop</p>
+                <p>It is the year 2028</p>
+                <p> Do you like ice cream?</p>
+            </div>
+            <div id="button_choices">
+                
+                <a class="buttons" href="">Yes</a>
+                <a class="buttons" href="">No</a>
+            
+            </div>
         </div>
     </div>
     
