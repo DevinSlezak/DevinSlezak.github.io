@@ -120,6 +120,14 @@
             b1.innerHTML = "Yes";
             b2.innerHTML = "No";
         }
+        function escape(){
+            img.src="images/pic2.JPG";
+            p1.innerHTML = "You begin to walk into a cave";
+            p2.innerHTML = "Stay alert for anything in the dark";
+            p3.innerHTML = "Would you like to join the group or fight";
+            b1.innerHTML = "Join";
+            b2.innerHTML = "Fight";
+        }
 
         //////State Machine
         function bclick(button){
@@ -133,7 +141,16 @@
                     state ="goToCamp";
                 }
             }
-
+            else if(state == "stayInSchool"){
+                if (button == 1){
+                    escape();
+                    state = "escape";
+                }
+                else if(button == 2){
+                    intenseTraining();
+                    state = "intenseTraining";
+                }
+            }
         }
     
     </script>
