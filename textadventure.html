@@ -104,37 +104,52 @@
         intro();
 
         function intro(){
-            img.src = "images/pic1.JPG";
+            img.src = "images/letter.jpg";
             b1.innerHTML = "Stay in School";
             b2.innerHTML = "Go to camp";
             p1.innerHTML = "Welcome to my Adventure.";
-            p2.innerHTML = "Will you stay in school or go to camp?";
-            p3.innerHTML = "Choose wisely";
+            p2.innerHTML = "You recieve a letter to enter into an academy you never heard of. You try searching it up but no info comes up.";
+            p3.innerHTML = "Will you stay in school or go to camp?";
         }
-
+        function goToCamp(){
+            img.src = "images/academy.jpg";
+            p1.innerHTML = "You decide to go to the camp after telling your parents you're going out with friends. After wandering around, you notice that it was cloaked and close to invisible. YOu notice that it has a lot of kids your age and older.";
+            p2.innerHTML = "The professors there show you your room that they prepared but you don't know whether you should stay. You decide to stick around but then they tell you to start training by doing excerices like climbing walls.";
+            p3.innerHTML = "After meeting other kids there, you still are not sure whether to stay or leave. Are you going to escape?";
+            b1.innerHTML = "Yes";
+            b2.innerHTML = "No";
+        }
         function stayInSchool(){
-            img.src="images/pic3.JPG";
-            p1.innerHTML = "Begin training for powers";
-            p2.innerHTML = "Meet other kids at the academy";
-            p3.innerHTML = "Would you like to try and escape?";
+            img.src = "images/school.jpg";
+            p1.innerHTML = "You ignore the letter and do everything as normal. But, after walking home from school, a group of guys in suits appear and take you to the academy. ";
+            p2.innerHTML = "This traumatizes you, strengthening your anxiety and making you nervous. You don't know what to do, but you see other kids there training and doing various exercises.";
+            p3.innerHTML = "You notice that they have weird powers that you've never seen before. Before going into training, you decide whether to escape. Will you?";
             b1.innerHTML = "Yes";
             b2.innerHTML = "No";
         }
         function escape(){
-            img.src="images/pic2.JPG";
+            img.src="images/cave.jpg";
             p1.innerHTML = "You begin to walk into a cave";
             p2.innerHTML = "Stay alert for anything in the dark";
             p3.innerHTML = "Would you like to join the group or fight";
             b1.innerHTML = "Join";
             b2.innerHTML = "Fight";
         }
+        function intenseTraining(){
+            img.src="images/intensetraining.jpg";
+            p1.innerHTML = "After training for 2 weeks, you begin to get tired but you feel different. You begin to actually like the academy and that it is a good change from before.";
+            p2.innerHTML = "You get told by the professors there that you will be assigned in a group with 2 other kids with differing powers. They tell you that you all are going to run training with one another to get along.";
+            p3.innerHTML = "You begin to go on tiny missions around the city and county, fighting monsters you didn't even know about. Noticing various flaws in your powers, affecting your mindset. You also meet many other hostile groups?";
+            b1.innerHTML = "Yes";
+            b2.innerHTML = "No";
+        }
 
         //////State Machine
-        function bclick(button){
+        function bclick (button){
             if (state == "intro"){
-                if(button == 1){
+                if (button == 1){
                     stayInSchool();
-                    state="stayInSchool";
+                    state ="stayInSchool";
                 }
                 else if(button == 2){
                     goToCamp();
@@ -148,11 +163,20 @@
                 }
                 else if(button == 2){
                     intenseTraining();
-                    state = "intenseTraining";
+                    state="intenseTraining";
+                }
+            }
+            else if(state == "goToCamp"){
+                if (button == 1){
+                    escape();
+                    state = "escape";
+                }
+                else if (button == 2){
+                    intenseTraining();
+                    state="intenseTraining";
                 }
             }
         }
-    
     </script>
     </body>
 </html>
