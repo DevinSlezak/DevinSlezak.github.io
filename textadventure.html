@@ -30,14 +30,14 @@
         }
         #story_text{
             background-color:#2E5984;
-            height:80%;
+            height:85%;
             background-image:url("");
             font-family:Fantasy;
             text-align:center;
         }
         #button_choices{
             background-color:#222222;
-            height: 20%;
+            height: 15%;
             color:red;
             font:bold;
             display:flex;
@@ -138,9 +138,9 @@
         }
         function escape(){
             img.src="images/cave.jpg";
-            p1.innerHTML = "You begin to walk into a cave";
-            p2.innerHTML = "Stay alert for anything in the dark";
-            p3.innerHTML = "Would you like to join the group or fight";
+            p1.innerHTML = "After escaping, you decide to take refuge in a cave to catch your breath. After resting, you notice that the cave goes farther down and you can hear various voices talking. You decide to investigate, going so dark into the cave that you have to use your energy to use your powers and light the way.";
+            p2.innerHTML = "You find a large room in the cave, where you find a group of people with random cloaks talking. You decide to confront them and ask what they're doing but they start to act odd. You don't know what to do but you decide to fight them after knowing you have powers. After battling, you realize that they are so much more powerful then you, and that you are close to dying.";
+            p3.innerHTML = "After passing out, you find out that you're back at the academy. You get filled in that they caught you just in time and brought you back to be nursed back into shape. After recovering, you now know that there is a dark presence and that you have to stop it. You practice more and get put into a group of other kids, you go on missions. But after a special mission, one of the figures bribe you while you're alone to join or die. Which one will you choose?";
             b1.innerHTML = "Join";
             b2.innerHTML = "Fight";
         }
@@ -148,7 +148,23 @@
             img.src="images/intensetraining.jpg";
             p1.innerHTML = "After training for 2 weeks, you begin to get tired but you feel different. You begin to actually like the academy and that it is a good change from before.";
             p2.innerHTML = "You get told by the professors there that you will be assigned in a group with 2 other kids with differing powers. They tell you that you all are going to run training with one another to get along.";
-            p3.innerHTML = "You begin to go on tiny missions around the city and county, fighting monsters you didn't even know about. Noticing various flaws in your powers, affecting your mindset. You also meet many other hostile groups?";
+            p3.innerHTML = "You begin to go on tiny missions around the city and county, fighting monsters you didn't even know about. Noticing various flaws in your powers, affecting your mindset. After deciding to take another mission, which only needed 2 people, you lose your teammate and find one of the cloaked figures. You decide to question them, but they then ask you whether you want to join their group or die. Which will you choose?";
+            b1.innerHTML = "Join";
+            b2.innerHTML = "Fight";
+        }
+        function join(){
+            img.src="images/join1.jpg";
+            p1.innerHTML = "After joining, you feel various dark and powerful emotions. Your brain can barely process it, hurting you and driving you close to insanity. You feel stressed, annoyed, angry, hurt, all at once. All of this changes you, making you have hate and anger towards everything, unlocking a different side of you.";
+            p2.innerHTML = "You are told that your main focus is to cause chaos around the town and infiltrate the town through fear and hatred. Your goal is to try and cause any type of weakness in the town to crumble, forcing you to  fight against the academy and the people that you used to work with. Although your in pain, you are trapped in this state that is similar to brainwashed and in a trance.";
+            p3.innerHTML = "?";
+            b1.innerHTML = "Yes";
+            b2.innerHTML = "No";
+        }
+        function fight(){
+            img.src="images/fight2.jpg";
+            p1.innerHTML = "After fighting one of the members, you are left mentally and physically drained, feeling close to passing out. You persist until you fall and can't even get up, but one of your teammates come by and help you. They heal you with their own powers but it is not enough to fully recover, so you and your teammate, only known as Number 34, return back to the academy to get rest and recover.";
+            p2.innerHTML = "You feel different as compared to when you left for the mission, as if you felt a different corrupt power in you. The doctors at the academy tell you to just sleep and rest, putting you out of work for a week. You only sleep and eat, but as you sleep, dreams torment and hurt you mentally, The nightmares wake up lots of times, draining you but as the week passes by, they dim down and become much weaker.";
+            p3.innerHTML = "Next?";
             b1.innerHTML = "Yes";
             b2.innerHTML = "No";
         }
@@ -183,6 +199,26 @@
                 else if (button == 2){
                     intenseTraining();
                     state="intenseTraining";
+                }
+            }
+            else if(state == "escape"){
+                if (button == 1){
+                    join();
+                    state = "join";
+                }
+                else if (button == 2){
+                    fight();
+                    state="fight";
+                }
+            }
+            else if (state == "intenseTraining"){
+                if (button == 1){
+                    join();
+                    state = "join";
+                }
+                else if (button == 2){
+                    fight();
+                    state="fight";
                 }
             }
         }
