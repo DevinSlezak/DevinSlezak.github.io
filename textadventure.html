@@ -13,26 +13,30 @@
             background-color:red;
         }
         #left_pane{
-            background-color:green;
+            background-color:black;
             height:100%;
             width:56%;
             float:left;
             display:flex;
             align-items:center;
             justify-content:center;
+            background-image:url("https://img.freepik.com/free-vector/black-carbon-industrial-background_79145-253.jpg?size=626&ext=jpg");
         }
         #right_pane{
-            background-color:blue;
+            background-color:#222222;
             height:100%;
             width:44%;
             float:left;
         }
         #story_text{
-            background-color:yellow;
+            background-color:#2E5984;
             height:80%;
+            background-image:url("");
+            font-family:Fantasy;
+            text-align:center;
         }
         #button_choices{
-            background-color:pink;
+            background-color:#222222;
             height: 20%;
             color:red;
             font:bold;
@@ -41,8 +45,8 @@
             justify-content:center;
         }
         #story_img{
-            max-height:97%;
-            max-width:100%;
+            max-height:200%;
+            max-width:200%;
             width:auto;
             height:auto;
         }
@@ -54,6 +58,11 @@
             border-radius:8px;
             font-size:25px;
             margin:10px;
+        }
+        .buttons:hover {
+            background-color:black;
+            background-image: linear-gradient(to bottom,#66FCF1,#1F2833);
+            color:#66FCF1;
         }
     </style>
     </head>
@@ -108,8 +117,8 @@
             b1.innerHTML = "Stay in School";
             b2.innerHTML = "Go to camp";
             p1.innerHTML = "Welcome to my Adventure.";
-            p2.innerHTML = "You recieve a letter to enter into an academy you never heard of. You try searching it up but no info comes up.";
-            p3.innerHTML = "Will you stay in school or go to camp?";
+            p2.innerHTML = "After returning from school, you normally just go to your room and rest. But today, you find something resting on the table. You recieve a letter to enter into an academy or camp you never even heard of. You try searching it up but no info comes up.";
+            p3.innerHTML = "It looks promising but you don't know yet. Your parents are away and you don't know what to do. Will you stay in school or go to camp?";
         }
         function goToCamp(){
             img.src = "images/academy.jpg";

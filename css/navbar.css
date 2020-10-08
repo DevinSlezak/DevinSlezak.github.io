@@ -20,7 +20,7 @@
             .navbar li:hover {
                 background-color:black;
                 background-image: linear-gradient(to bottom,#66FCF1,#1F2833);
-                 color:aqua;
+                color:aqua;
             }
         
          .dropdown-content li{
