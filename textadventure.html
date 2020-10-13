@@ -184,6 +184,22 @@
             b1.innerHTML = "The Ravens";
             b2.innerHTML = "The Academy";
         }
+        function Join(){
+            img.src="images/contract.jpg";
+            p1.innerHTML = "After joining the Ravens, you decide that you can use this opportunity as a way to betray them. You hope that the academy is able to know what you are thinking of doing but you decide to do it anyways. After joining, you try and sabotage them and slow them down in the fight, paving the way for your actual allies to win.";
+            p2.innerHTML = "They are oblivious to  what you're doing since they are focused in on the fight, making the pressure land all on you. You try and use your powers against them to where they won't notice, blocking them and throwing fire at them. The Ravens mistake it as someone from the academy, leaving you to be free and do whatever you want.";
+            p3.innerHTML = "They become worn out and the academy traps them in a spell that keeps them dormant forever. There is no possibility that they can break out, so the battle is over. The world is free from the upcoming doom, and it was all on you. ";
+            b1.innerHTML = "";
+            b2.innerHTML = "";
+        }
+        function Fight(){
+            img.src="images/fight3.jpg";
+            p1.innerHTML = "After staying with the academy, you are designated as an enemy. The Ravens never payed attention to you since they wanted you as an ally, but after declining, they threw everything at you. The camp also helped you, trying to give you their power since you were the most powerful, making you the final judge for the fight.";
+            p2.innerHTML = "You think of all of the different hardships that you went through, the torture and amount of practice for this moment, so you had to make sure you won. You do the last attack that leaves the Ravens completely powerless, leaving it to the academy to trap them in a spell. ";
+            p3.innerHTML = "This spell would keep them in a trance, leaving the world peaceful and without a powerful and dangerous enemy wandering around with evil intentions. All of your allies are drained, and you all sit there for hours, waiting and resting, feeling overpowered.";
+            b1.innerHTML = "";
+            b2.innerHTML = "";
+        }
 
         //////State Machine
         function bclick (button){
@@ -255,6 +271,26 @@
                 else if (button == 2){
                     Catacombs();
                     state="Catacombs";
+                }
+            }
+            else if (state == "Machu"){
+                if (button == 1){
+                    Join();
+                    state = "Join";
+                }
+                else if (button == 2){
+                    Fight();
+                    state="Fight";
+                }
+            }
+            else if (state == "Catacombs"){
+                if (button == 1){
+                    Join();
+                    state = "Join";
+                }
+                else if (button == 2){
+                    Fight();
+                    state="Fight";
                 }
             }
         }
