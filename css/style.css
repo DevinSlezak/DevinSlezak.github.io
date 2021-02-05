@@ -44,4 +44,10 @@
        .center {
            text-align: center
        }
+       .centervid {
+           margin-left: 0 auto;
+           margin-right: 0 auto;
+           width: 300 px;
+           display: block;
+       }
        
