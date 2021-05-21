@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+         <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    </head>
+  <link rel="stylesheet" type="text/css" href="css/navbar.css"/>
+    <body class="background">
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contactme.html">Contact Me</a></li>
+            <li><a href="aboutme.html">About Me</a></li>
+            <li class="dropdown">
+                <a href="#">Projects</a>
+                <ul class="dropdown-content">
+                    <li><a href="textadventure.html">Text Adventure</a></li>
+                    <li><a href="Pythontextadventure.html">Python Text Adventure</a></li>
+                    <li><a href="Tkinterproject.html">Tkinter Project</a></li>
+                    <li><a href="TSAproject.html">RSA Project</a></li>
+                    <li class="active"><a href="thunkableproject.html">Thunkable Project</a></li>
+                </ul>
+            </li>
+        </ul>
+    <h1 class="hed">Thunkable Project</h1>
+        <hr>
+        <p class="mid"> The purpose of the program is to quiz the user with trivia questions, providing a multiple choice section as well as two free response questions. The video demonstrates the program asking a multiple choice question, adding points to the score at the bottom of the screen since the user chose the correct answer. The input of the program is the user’s choice for one of the four buttons provided, and the output is depicted to be the new score that the user has. </p>
+        <video style="display:block; margin: 0 auto;" width="300" height="250"  controls>
+            <source src="" type="video/mp4">
+        </video>
+        <hr>
+        <p class="mid"> The data contained in the variable represents the total score that the player had accumulated throughout the game. It keeps track of how many questions were answered correctly. The game runs off of the player’s score, being a main component of the program since it is supposed to quiz the player but also be considered a game, so using this list would help keep track of the amount of questions that were correct.</p>
+        <table class="table2">
+            <tr>
+                <th><img src="images/3b.jpg" length="100px" height = "100px"></th>
+                <th><img src="images/3bsecond.jpg" length="100px" height = "150px"></th>
+            </tr>
+        </table>
+        <hr>
+        <p class="mid">The procedure creates a variable that instead tracks the high scores of the user throughout the various times they have played the game. After the last question, the procedure and code check the players high score, if the score is higher past high scores kept in the app’s storage, it instead puts that new high score until it is beaten or the game is reset. The user’s score is examined after the final question of the game, and once the button for the question is clicked, which submits the answers, it checks the current score with past high scores on the app, and if the score is greater than the past high scores, it alerts the user, then showing the new current high score and then resetting the game. In the first call to the procedure, it would evaluate whether the current score of the user is greater than the high score, and if it is, the current score would be saved as the high score until it is beaten. The second call, which also evaluates the current score with the high score, instead resets the game by executing differing code that only occurs when the current score is lower than the high score. The conditions tested in the first call and second call are both evaluating whether the user’s score is greater than the current high score, and whether it is true or false, the code would execute a different segment that either marks down the new high score and resets or solely resets until a better score is made.</p>
+        <table class="table2"> 
+            <tr>
+                <th><img src="images/3c.jpg" length="50px" height = "50px"></th>
+                <th><img src="images/3csecond.jpg" length="300px" height = "300px"></th>
+            </tr>
+        </table>
+        <hr>
+        <iframe src="https://x.thunkable.com/copy/45cbf5d1873e98b40a552a62dfd32344e" height="700px" width="100%" title="Thunkable Project"></iframe>
+    </body>
+</html>
